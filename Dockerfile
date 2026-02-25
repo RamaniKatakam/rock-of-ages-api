@@ -18,6 +18,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Install pipenv
 RUN pip install --upgrade pip && \
   pip install pipenv
+  
 
 # Copy Pipfile and Pipfile.lock
 COPY Pipfile* /app/
